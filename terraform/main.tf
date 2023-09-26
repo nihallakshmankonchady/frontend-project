@@ -43,7 +43,7 @@ resource "aws_instance" "web001" {
   instance_type = "t2.micro"
   vpc_security_group_ids = [ aws_security_group.webservers.id ]
 
-  key_name = "webserver_key"
+  key_name = "terraformjenkins"
 
   root_block_device {
       encrypted = true
